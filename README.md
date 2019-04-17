@@ -5,7 +5,7 @@ A deep neural networks model for predicting the probablity of a single nucleotid
 
 Description
 ===
-The deep neural networks architecture was generated using [Keras](https://keras.io/). The model was trained with a dataset of experimentally-defined exonic splicing mutation, which was provided by the challenge host. It receives a base sequence with the information of the position of mutation, and returns the probability of disrupting splicing.  
+The deep neural networks architecture was generated using [Keras](https://keras.io/). The model was trained with a dataset of experimentally-defined exonic splicing mutation, which was provided by the challenge host. It receives a base sequence with the information of the position of mutation, and returns the probability of disrupting splicing.   
 The attached source code is a simple sample to run the model.
 
 Required
@@ -15,14 +15,15 @@ Required
 
 Usage
 ===
-The required input is a 170-mer base sequence with the mutated nucleotide converted as "M". It should comprise both splicing sites as the original traing data. 
-It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.
+The required input is a 170-mer base sequence with the mutated nucleotide converted as "M". It should comprise both splicing sites as the original traing data.   
+It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.  
 The output is the predicted probability of the variant being exonic splicing mutation (ranging from 0 to 1).
 
 Sample:
 Download all into your favorite directory, and run "sample.py" as follows.
 ```bash
-$ sample.py CTGTCCCATGTCCTGTCCTCCCTTGTCCACGCCTTGCCCAGCAGCCTCTAACCTCTGCCCTGGGCTCCCCACTCCCACAGTTCTGGATGCTGATTCTGGCCACCACCATCCCCATGCCTGCCGMGTACTTCATGCCCATCTTTGTCTATGGTGAGTCTGGGGTCCTGAGG
+$ sample.py CTGTCCCATGTCCTGTCCTCCCTTGTCCACGCCTTGCCCAGCAGCCTCTAACCTCTGCCCTGGGCTCCCCACTCCCACAGTTCTGGATGCTGA
+TTCTGGCCACCACCATCCCCATGCCTGCCGMGTACTTCATGCCCATCTTTGTCTATGGTGAGTCTGGGGTCCTGAGG
 ```
 Result:
 ```bash
@@ -31,5 +32,5 @@ The probability of ESM: 0.8251094222068787
 
 License
 ===
-The souce code and the model are freely available for non-commercial use.
+The souce code and the model are freely available for non-commercial use.  
 No claim of suitability, guarantee, or any warranty whatever happens.
