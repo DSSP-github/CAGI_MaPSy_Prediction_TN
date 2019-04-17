@@ -15,9 +15,9 @@ Required
 
 Usage
 ===
-The required input is a 170-mer base sequence with the mutated nucleotide converted as "M". It should comprise both splicing sites as the original traing data.   
-It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.  
-The output is the predicted probability of the variant being exonic splicing mutation (ranging from 0 to 1).
+* The required input is a 170-mer base sequence with the mutated nucleotide converted as "M" (It should comprise both splicing sites as the original traing data).   
+* It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.  
+* The output is the predicted probability of the variant being exonic splicing mutation (ranging from 0 to 1).
 
 Sample:
 Download all into your favorite directory, and run "sample.py" as follows.
@@ -32,5 +32,5 @@ The probability of ESM: 0.8251094222068787
 
 License
 ===
-The souce code and the model are freely available for non-commercial use.  
-No claim of suitability, guarantee, or any warranty whatever happens.
+* The souce code and the model are freely available for non-commercial use.  
+* No claim of suitability, guarantee, or any warranty whatever happens.
