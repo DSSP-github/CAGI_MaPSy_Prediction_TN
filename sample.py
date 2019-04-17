@@ -21,7 +21,7 @@ def check_input(input_seq):
 
 
 def main(argv=sys.argv):
-    parser = argparse.ArgumentParser(description='Receive a single 170-mer base sequence, and return the probabality of ESM')
+    parser = argparse.ArgumentParser(description='Receive a single 170-mer base sequence, and return the probability of ESM.')
     if len(argv) != 2:
         parser.parse_args(['-h'])
     parser.add_argument('sequence')
@@ -29,7 +29,7 @@ def main(argv=sys.argv):
     input_seq = args.sequence
     check_input(input_seq)
     input_vec = np.zeros((1, 170, 5))
-    for i in range(170):
+    for i in range(len(input_seq)):
         try:
             input_vec[0][i][BASE_KEY[input_seq[i]]] = 1
         except KeyError:
