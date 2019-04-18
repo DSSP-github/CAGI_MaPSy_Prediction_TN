@@ -19,7 +19,7 @@ Usage
 * It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.  
 * The output is the predicted probability of the variant being exonic splicing mutation (ranging from 0 to 1).
 
-Sample:
+Sample:  
 Download all into your favorite directory, and run "sample.py" as follows.
 ```bash
 $ python sample.py CTGTCCCATGTCCTGTCCTCCCTTGTCCACGCCTTGCCCAGCAGCCTCTAACCTCTGCCCTGGGCTCCCCACTCCCACAGTTCTGGATGCTGA
