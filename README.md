@@ -19,16 +19,23 @@ Usage
 * It is encoded to a one-hot vector where each base is converted to a five-element (i.e. "A", "C", "G", "T", and "M") vector of which only element is 1 and the others are 0.  
 * The output is the predicted probability of the variant being exonic splicing mutation (ranging from 0 to 1).
 
-Sample:  
+Examples
+===
 Download all into your favorite directory, and run "sample.py" as follows.
 ```bash
-$ python sample.py CTGTCCCATGTCCTGTCCTCCCTTGTCCACGCCTTGCCCAGCAGCCTCTAACCTCTGCCCTGGGCTCCCCACTCCCACAGTTCTGGATGCTGA
+$ python sample.py -I CTGTCCCATGTCCTGTCCTCCCTTGTCCACGCCTTGCCCAGCAGCCTCTAACCTCTGCCCTGGGCTCCCCACTCCCACAGTTCTGGATGCTGA
 TTCTGGCCACCACCATCCCCATGCCTGCCGMGTACTTCATGCCCATCTTTGTCTATGGTGAGTCTGGGGTCCTGAGG
 ```
 Result:
-```bash
-The probability of ESM: 0.8251094222068787
 ```
+The probability of ESM: 0.49164602160453796
+```
+  
+  Alternatively, it can receive a FASTA file.  
+  You can specify an output filename optionally. If you do not specify an output filename, the results are saved as "result_{input filename}.txt" in the same directory as the input file.  
+  ```bash
+  $ python sample.py -I input.fasta -O output.txt 
+  ```
 
 License
 ===
