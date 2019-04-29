@@ -32,7 +32,7 @@ The probability of ESM: 0.49164602160453796
 ```
   
   Alternatively, it can receive a FASTA file.  
-  You can specify an output filename optionally. If you do not specify an output filename, the results are saved as "result_{input filename}.txt" in the same directory as the input file.  
+  You can specify an output filename optionally. If you do not specify an output filename, the results are saved as "{input filename}_result.txt" in the same directory as the input file.  
   ```bash
   $ python sample.py -I input.fasta -O output.txt 
   ```
