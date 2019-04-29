@@ -10,7 +10,6 @@ BASE_KEY = {'A': 0, 'C': 1, 'G': 2, 'T': 3, 'M': 4}
 
 
 def check_input(input_seq):
-    print(type(input_seq))
     if not type(input_seq) == str:
         print('The input must be a string.')
         sys.exit(1)
